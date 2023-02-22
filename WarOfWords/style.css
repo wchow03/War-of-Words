@@ -1,0 +1,322 @@
+::selection {
+    background: rgba(255, 255, 255, 0.25);
+  }
+  
+  body {
+      background: rgb(36,54,152);
+      background: radial-gradient(circle, rgba(36,54,152,1) 0%, rgba(12,22,154,1) 71%, rgba(4,23,122,1) 82%);
+  }
+  
+  .background {
+      background: url(./images/background.png);
+      width: 100vw;
+      height: 100vh;
+      background-size: cover;
+  }
+  
+  /* ===================================================== */
+  .terminal-window {
+      width: 650px;
+      height: 450px;
+      background-color: antiquewhite;
+      box-shadow: 10px 20px 20px 10px rgb(0, 0, 0, 0.7);
+      position: static;
+  }
+  
+  /* ===================================================== */
+  
+  .options {
+      display: flex;
+      justify-content: flex-end;
+      background-color: rgb(25, 25, 24);
+      /* box-shadow: 10px 20px 20px 10px rgb(0, 0, 0, 0.7); */
+  
+  }
+  
+  .minimize,
+  .maximize,
+  .close {
+      display: inline-block;
+      margin-right: 10px;
+      position: relative;
+      top: 5px;
+  }
+  
+  .close {
+      cursor: pointer;
+      width: 25px;
+      height: 25px;
+  }
+  
+  .minimize {
+      width: 20px;
+      height: 4px;
+      margin-top: 8px;
+      background-color: white;
+  }
+  
+  .maximize {
+      width: 15px;
+      height: 15px;
+      border: 3px solid white;
+  }
+  
+  .left-x,
+  .right-x {
+      display: inline-block;
+      position: relative;
+      width: 3px;
+      height: 25px;
+      background-color: red;
+      bottom: 2px;
+  }
+  
+  .left-x {
+      transform: rotate(45deg);
+      left: 8px;
+  }
+  
+  .right-x {
+      transform: rotate(-45deg);
+      left: 2px;
+  }
+  
+  /* ===================================================== */
+  
+  .bar-container {
+      width: 650px;
+      height: 30px;
+      background-color: #771818;
+      position: absolute;
+      bottom: 105%;
+      border: 4px solid black;
+      border-radius: 3px;
+  
+  }
+  
+  .health-bar {
+      height: 100%;
+      width: 0%;
+      background-color: rgb(18, 100, 18);
+  }
+  
+  .percentage {
+      position: relative;
+      left: 50%;
+      bottom: 110%;
+      color: white;
+  }
+  
+  /* ===================================================== */
+  
+  .main-content {
+      width: 650px;
+      height: 400px;
+      background-color: #252525;
+      font-weight: bold;
+      overflow: scroll;
+      /* box-shadow: 10px 50px 10px rgb(0, 0, 0, 0.7); */
+  
+  }
+  
+  .main-content::-webkit-scrollbar {
+      display: none;
+  }
+  
+  .terminal-text-user,
+  .terminal-text {
+      display: block;
+      color: white;
+      font-family: monospace;
+      font-size: 16px;
+  }
+  
+  .terminal-text {
+      margin-left: 10px;
+  }
+  
+  /* ===================================================== */
+  
+  .right-arrow {
+      display: inline;
+      color: white;
+      position: relative;
+      left: 5px;
+      font-family: monospace;
+      font-size: 16px;
+  }
+  
+  .text-box {
+      width: 650px;
+      height: 35px;
+      position: relative;
+      padding-top: 5px;
+      background-color: #474747;
+      font-family: monospace;
+      box-shadow: 0 8px 10px rgba(5, 5, 5, 0.2);
+  }
+  
+  .text-field {
+      display: inline;
+      width: 95%;
+      background-color: #474747;
+      color: white;
+      border: none;
+      position: relative;
+      left: 5px;
+      outline: none;
+      font-size: 16px;
+  }
+  
+  
+  /* ===================================================== */
+  
+  .carousel {
+      width: 600px;
+      position: relative;
+      top: 30%;
+      left: 5%;
+  }
+  
+  .us-flag {
+      filter: brightness(25%);
+  }
+  
+  .container {
+      width: 100px;
+      height: 300px;
+      display: flex;
+      justify-content: space-evenly;
+      position: relative;
+      top: 25%;
+  }
+  
+  .carousel img {
+      height: 400px;
+  }
+  
+  .carousel-indicators {
+      position: relative;
+      top: 105%;
+  }
+  
+  /* ===================================================== */
+  
+  .playButton {
+      display: inline-block;
+  }
+  
+  .play {
+      width: 300px;
+      height: 100px;
+      background-color: #222121;
+      font-size: 40px;
+      font-family: monospace;
+      border: 5px solid #252525;
+      display: flex;
+      align-items: center;
+      border-radius: 10px;
+  }
+  
+  .buttonText {
+      display: flex;
+      justify-content: center;
+      /* position: absolute; */
+      font-size: 40px;
+      letter-spacing: 10px;
+      font-family: monospace;
+      width: 100%;
+      white-space: nowrap;
+      overflow: hidden;
+      color: rgb(17, 138, 49);
+  }
+  
+  .link-to-terminal {
+      text-decoration: none;
+      position: absolute;
+      left: 42%;
+      top: 43%;
+  }
+  
+  .link-to-rules {
+      text-decoration: none;
+      position: absolute;
+      left: 46%;
+      top: 55%;
+  }
+  
+  .rule-button {
+      height: 50px;
+      width: 150px;
+      text-decoration: none;
+  }
+  
+  .span-rules {
+      margin-left: 15px;
+      text-align: center;
+      color: rgb(17, 138, 49);
+  }
+  
+  .menu-container {
+      position: static;
+  }
+  
+  /* ===================================================== */
+  
+  .description {
+      bottom: 20px;
+      position: relative;
+      font-weight: bold;
+      font-size: 17px;
+  }
+  
+  .small-description {
+      font-weight: normal;
+      font-size: 12px;
+  }
+  
+  .country-title {
+      position: relative;
+      bottom: 30px;
+      font-size: 50px;
+  }
+  
+  .france-title {
+      bottom: 30px;
+  }
+  
+  .use-title {
+      bottom: 30px;
+  }
+  
+  /* ===================================================== */
+  
+  .rules {
+      padding: 10px;
+  }
+  
+  .logo {
+      position: absolute;
+      left: 35%;
+  }
+  
+  .timer {
+      padding: 5px;
+      position: relative;
+      top: 10px;
+      width: 240px;
+      height: 40px;
+      background-color: #252525;
+      color: white;
+      border-radius: 5px;
+  }
+  
+  .time {
+      display: inline-block;
+  }
+  
+  .time-title,
+  .time {
+      font-size: 25px;
+  }
+  
